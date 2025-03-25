@@ -581,6 +581,10 @@ The following two commands should give the same text output and very similar pre
 <li><p>Get the reference output by <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">scripts/playground/reference_hf.py</span> <span class="pre">--model-path</span> <span class="pre">[new</span> <span class="pre">model]</span> <span class="pre">--model-type</span> <span class="pre">{text,vlm}</span></code></p></li>
 <li><p>Get the SGLang output by <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">sglang.bench_one_batch</span> <span class="pre">--correct</span> <span class="pre">--model</span> <span class="pre">[new</span> <span class="pre">model]</span></code></p></li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When comparing outputs between reference_hf.py and SGLang, ensure that parameters such as <code class="docutils literal notranslate"><span class="pre">--dtype</span></code>, temperature, top_p, and other sampling parameters are identical across both scripts. Even small differences in these parameters can lead to variations in output that might be mistakenly attributed to implementation issues.</p>
+</div>
 </section>
 <section id="add-the-model-to-the-test-suite">
 <h4>Add the model to the test suite<a class="headerlink" href="#add-the-model-to-the-test-suite" title="Link to this heading">#</a></h4>
