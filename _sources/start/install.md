@@ -16,7 +16,7 @@ uv pip install "sglang[all]>=0.4.6.post4"
 
 **Quick Fixes to Common Problems**
 
-- SGLang currently uses torch 2.5, so you need to install flashinfer for torch 2.5. If you want to install flashinfer separately, please refer to [FlashInfer installation doc](https://docs.flashinfer.ai/installation.html). Please note that the FlashInfer pypi package is called `flashinfer-python` instead of `flashinfer`.
+- SGLang currently uses torch 2.6, so you need to install flashinfer for torch 2.6. If you want to install flashinfer separately, please refer to [FlashInfer installation doc](https://docs.flashinfer.ai/installation.html). Please note that the FlashInfer pypi package is called `flashinfer-python` instead of `flashinfer`. Please remove the cached flashinfer under your `.cache/flashinfer` before installing a different version.
 
 - If you encounter `OSError: CUDA_HOME environment variable is not set`. Please set it to your CUDA install root with either of the following solutions:
 
