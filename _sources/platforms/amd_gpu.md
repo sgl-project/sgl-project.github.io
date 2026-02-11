@@ -16,6 +16,10 @@ When using AMD GPUs (such as MI300X), certain system-level optimizations help en
 
 Below are a few key settings to confirm or enable for SGLang:
 
+### Install ROCm Drivers
+
+Ensure ROCm drivers are installed on the host system: `sudo apt install -y amdgpu-dkms && sudo reboot`
+
 ### Update GRUB Settings
 
 In `/etc/default/grub`, append the following to `GRUB_CMDLINE_LINUX`:
