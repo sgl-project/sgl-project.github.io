@@ -483,7 +483,7 @@ Please consult the documentation below and [server_args.py](https://github.com/s
 ## Debug tensor dumps
 | Argument | Description | Defaults | Options |
 | --- | --- | --- | --- |
-| `--debug-tensor-dump-output-folder` | The output folder for dumping tensors. | `None` | Type: str |
+| `--debug-tensor-dump-output-folder` | The output folder for dumping tensors.In Eagle mode, tensor outputs from draft and target models are stored in separate subdirectories ('draft' and 'target'). | `None` | Type: str |
 | `--debug-tensor-dump-layers` | The layer ids to dump. Dump all layers if not specified. | `None` | Type: JSON list |
 | `--debug-tensor-dump-input-file` | The input filename for dumping tensors | `None` | Type: str |
 | `--debug-tensor-dump-inject` | Inject the outputs from jax as the input of every layer. | `False` | Type: str |
